@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import { Transition, Popover } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
-import MenuItem from './menu-item'
+import MenuItems from './menu-items'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -27,31 +27,7 @@ export default function Header() {
                   <div className="relative hidden sm:block sm:ml-4">
                     
                     <div className="flex items-center  space-x-6">
-                      <Link href="/" passHref>
-                        <MenuItem>
-                          Home
-                        </MenuItem>
-                      </Link>
-
-                      <Link href="/sketchbook" passHref>
-                        <MenuItem>
-                          Sketchbook
-                        </MenuItem>
-                      </Link>
-                        
-                      <Link href="/podcast" passHref>
-                        <MenuItem>
-                          Podcast
-                        </MenuItem>
-                      </Link>
-
-                      <Link href="/about" passHref>
-                        <MenuItem>
-                          About
-                        </MenuItem>
-                      </Link>
-                    
-
+                      <MenuItems />
                     </div>
                   </div>
                 </div>
@@ -113,30 +89,7 @@ export default function Header() {
                   )}
                 >
                   <div className=" pt-2 pb-3 space-y-8">
-                    <Link href="/" passHref>
-                      <MenuItem>
-                        Home
-                      </MenuItem>
-                    </Link>
-
-                    <Link href="/sketchbook" passHref>
-                      <MenuItem>
-                        Sketchbook
-                      </MenuItem>
-                    </Link>
-
-                    <Link href="/podcast" passHref>
-                      <MenuItem>
-                        Podcast
-                      </MenuItem>
-                    </Link>
-
-                    <Link href="/about" passHref>
-                      <MenuItem>
-                        About
-                      </MenuItem>
-                    </Link>
-                    
+                    <MenuItems />                    
                   </div>
                 </Popover.Panel>
               </Transition.Child>
