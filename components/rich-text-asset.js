@@ -10,8 +10,8 @@ export default function RichTextAsset({ id, assets }) {
       return <a className="font-bold underline underline-offset-2" href={asset.url}>{asset.description}</a>
     }    
     return (
-      <div className="w-full h-[100vw] sm:h-96 relative">
-        <ContentfulImage src={asset.url} objectFit="cover" layout="fill" alt={asset.description} />
+      <div className="w-full relative">
+        <ContentfulImage src={asset.url} width={asset.width} height={asset.height}alt={asset.description} />
       </div>
       
     )
