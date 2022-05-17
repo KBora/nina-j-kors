@@ -13,7 +13,7 @@ export default function Header() {
     <Popover as="nav" className="">
       {({ open }) => (
         <>
-          <div className='bg-white'>
+          <div>
             <div className="lg:container mx-auto px-5 sm:px-0 py-2 sm:py-4">
               <div className="flex md:flex-grow items-center justify-between h-16">
                 <div className="flex md:flex-grow items-center justify-between">
@@ -37,7 +37,7 @@ export default function Header() {
                 <div className="-mr-2 flex sm:hidden">
                   {/* Mobile menu button */}
                   <Popover.Button className={classNames(
-                    'text-black focus:ring-black/50',
+                    'focus:ring-black/50',
                     'inline-flex items-center justify-center p-2 rounded-md  focus:outline-none focus:ring-2 focus:ring-inset '
                   )}
                   >
