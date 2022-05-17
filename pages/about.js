@@ -3,34 +3,32 @@ import Head from 'next/head'
 import Container from '../components/container'
 import Header from '../components/header'
 import Layout from '../components/layout'
-import Gallery from 'react-photo-gallery'
 import PageTitle from '../components/page-title'
 
-export default function Index({ galleryImages }) {
+export default function Index() {
 
   return (
     <>
       <Layout>
         <Head>
-          <title>Nina J Kors</title>
+          <title>Nina J Kors - About</title>
         </Head>
-        
+
         <Container>
           <Header />
 
-          <PageTitle>Sketchbook</PageTitle>
-
-          <Gallery photos={galleryImages} direction={"column"} ></Gallery>          
+          <PageTitle>About</PageTitle>
           
+          <div className="px-5 sm:px-0">
+            <div className="mt-16 text-xl">
+              <span>Short bio goes here</span>
+            </div>
+          </div>
+
         </Container>
       </Layout>
     </>
   )
 }
 
-export async function getStaticProps() {
-  const galleryImages = (await getGalleryImages()) ?? []
-  return {
-    props: { galleryImages },
-  }
-}
+

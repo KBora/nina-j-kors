@@ -14,7 +14,7 @@ export default function Header() {
       {({ open }) => (
         <>
           <div className='bg-white'>
-            <div className="lg:container mx-auto py-2 sm:py-4">
+            <div className="lg:container mx-auto px-5 sm:px-0 py-2 sm:py-4">
               <div className="flex md:flex-grow items-center justify-between h-16">
                 <div className="flex md:flex-grow items-center justify-between">
                   <div className="flex-shrink-0">
@@ -26,7 +26,7 @@ export default function Header() {
                   </div>
                   <div className="relative hidden sm:block sm:ml-4">
                     
-                    <div className="flex items-center  space-x-6">
+                    <div className="flex items-center space-x-6">
                       <MenuItems />
                     </div>
                   </div>
@@ -88,7 +88,7 @@ export default function Header() {
                     'z-30 w-full absolute origin-top rounded-b-lg sm:hidden'
                   )}
                 >
-                  <div className=" pt-2 pb-3 space-y-8">
+                  <div className="px-5 pt-2 pb-3 space-y-8">
                     <MenuItems />                    
                   </div>
                 </Popover.Panel>

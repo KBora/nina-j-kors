@@ -12,6 +12,14 @@ export default function MenuItems() {
         </div>
       </Link>
 
+      <Link href="/blog" passHref>
+        <div>
+          <MenuItem>
+            Blog
+          </MenuItem>
+        </div>
+      </Link>
+
       <Link href="/sketchbook" passHref>
         <div>
           <MenuItem>

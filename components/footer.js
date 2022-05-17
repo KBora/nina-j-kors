@@ -6,7 +6,8 @@ export default function Footer() {
     <footer className="bg-accent-1 border-t border-accent-2">
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center">
-          Footer To do
+          Gruppo Telegram: https://t.me/ninalegge
+          Instagram
         </div>
       </Container>
     </footer>
