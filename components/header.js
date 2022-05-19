@@ -67,7 +67,7 @@ export default function Header() {
                 {/* bg-gradient-to-b from-transparent  via-black/40 to-transparent */}
                 <Popover.Overlay
                   className={classNames(
-                    'bg-white',
+                    'bg-yellow-50',
                     'z-30 fixed top-20 inset-0 bg-opacity-75 backdrop-blur-sm'
                   )}
                 />
@@ -84,7 +84,7 @@ export default function Header() {
               >
                 <Popover.Panel
                   className={classNames(
-                    'bg-gradient-to-b from-white to-transparent',
+                    'bg-gradient-to-b from-yellow-50 to-transparent',
                     'z-30 w-full absolute origin-top rounded-b-lg sm:hidden'
                   )}
                 >
