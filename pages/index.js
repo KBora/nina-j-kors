@@ -4,8 +4,6 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { PlayIcon } from '@heroicons/react/outline'
-
 
 export default function Index() {
 
@@ -26,7 +24,10 @@ export default function Index() {
             <div className="flex w-full h-full justify-center items-center pointer-events-none">
               <Link href="/podcast">
                 <div className="pointer-events-auto cursor-pointer">
-                  <PlayIcon className="block h-24 w-24" aria-hidden="true" />
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="32" fill="#FFC2CC" />
+                    <path d="M49.3398 30.2344C50.7539 30.9868 50.7539 33.0132 49.3398 33.7656L24.6103 46.9234C23.2782 47.6322 21.6709 46.6667 21.6709 45.1578L21.6709 18.8422C21.6709 17.3333 23.2782 16.3678 24.6103 17.0766L49.3398 30.2344Z" fill="#221435" />
+                  </svg>
                 </div>                
               </Link>
             </div>
@@ -68,7 +69,7 @@ export default function Index() {
             </div>   
           </div>
 
-          <div className="fixed inset-0 w-screen h-screen pointer-events-none z-10">            
+          <div className="fixed inset-0 w-screen h-screen pointer-events-none z-10 opacity-40">            
             <div className="flex min-w-full min-h-full justify-center items-center pointer-events-none">
               <motion.svg
                 style={{ scale: 2, originX: '50%', originY: '50%' }}
