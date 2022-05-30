@@ -23,9 +23,9 @@ export default function Index() {
         <div className="">
       
           <div className="fixed inset-0 w-screen h-screen z-30 pointer-events-none">
-            <div className="flex w-full h-full justify-center items-center ">
+            <div className="flex w-full h-full justify-center items-center pointer-events-none">
               <Link href="/podcast">
-                <div className="cursor-pointer">
+                <div className="pointer-events-auto cursor-pointer">
                   <PlayIcon className="block h-24 w-24" aria-hidden="true" />
                 </div>                
               </Link>
