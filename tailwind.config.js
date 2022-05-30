@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['David Libre', ...defaultTheme.fontFamily.sans],        
+        sans: ['David Libre', ...defaultTheme.fontFamily.sans],
+        script: ['Homemade Apple', ...defaultTheme.fontFamily.serif]
       },
       colors: {
         'accent-1': '#FAFAFA',
