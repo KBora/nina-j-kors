@@ -38,7 +38,7 @@ export default function Header() {
                   {/* Mobile menu button */}
                   <Popover.Button className={classNames(
                     'focus:ring-black/50',
-                    'inline-flex items-center justify-center p-2 rounded-md  focus:outline-none focus:ring-2 focus:ring-inset '
+                    'inline-flex items-center justify-center p-2 rounded-md  focus:outline-none focus:ring-2 focus:ring-inset z-50'
                   )}
                   >
                     <span className="sr-only">Open main menu</span>
@@ -68,7 +68,7 @@ export default function Header() {
                 <Popover.Overlay
                   className={classNames(
                     'bg-yellow-50',
-                    'z-30 fixed top-20 inset-0 bg-opacity-75 backdrop-blur-sm'
+                    'z-30 fixed inset-0 bg-opacity-80 backdrop-blur-sm'
                   )}
                 />
               </Transition.Child>
@@ -84,7 +84,7 @@ export default function Header() {
               >
                 <Popover.Panel
                   className={classNames(
-                    'bg-gradient-to-b from-yellow-50 to-transparent',
+                    'bg-gradient-to-b from-transparent to-transparent via-yellow-50',
                     'z-30 w-full absolute origin-top rounded-b-lg sm:hidden'
                   )}
                 >

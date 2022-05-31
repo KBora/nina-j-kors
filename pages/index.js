@@ -1,6 +1,6 @@
 import Container from '../components/container'
 import Header from '../components/header'
-import Layout from '../components/layout'
+import LayoutHome from '../components/layout-home'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -9,7 +9,7 @@ export default function Index() {
 
   return (
     <>
-      <Layout>
+      <LayoutHome>
         <Head>
           <title>Nina J Kors</title>
         </Head>
@@ -20,7 +20,7 @@ export default function Index() {
 
         <div className="">
       
-          <div className="fixed inset-0 w-screen h-screen z-30 pointer-events-none">
+          <div className="fixed inset-0 w-screen h-screen z-20 pointer-events-none">
             <div className="flex w-full h-full justify-center items-center pointer-events-none">
               <Link href="/podcast">
                 <div className="pointer-events-auto cursor-pointer">
@@ -109,7 +109,7 @@ export default function Index() {
           </div>
           
         </div>         
-      </Layout>
+      </LayoutHome>
     </>
   )
 }
