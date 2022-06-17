@@ -1,9 +1,9 @@
-import { getGalleryImages } from '../lib/api'
 import Head from 'next/head'
 import Container from '../components/container'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import PageTitle from '../components/page-title'
+import Image from 'next/image'
 
 export default function Index() {
 
@@ -21,18 +21,36 @@ export default function Index() {
 
           <div className="px-5 sm:px-0">
             <div className="mt-16 text-xl">
-              <span className="mr-3">Check out my English language podcast: </span>
+              <div lassName="mr-3">Check out my podcast 'Too naked to hide':</div>
+              
+              <div className="mt-4 font-bold">Spreaker (English)</div>
               <a className="text-fuchsia-700 font-bold" href="https://www.spreaker.com/show/too-naked-to-hide">
-                https://www.spreaker.com/show/too-naked-to-hide
+                Too naked to hide
+              </a>
+
+              <div className="mt-4 font-bold">Google Podcasts (English) </div>
+              <a className="text-fuchsia-700 font-bold" href="https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNTU2MDExOC9lcGlzb2Rlcy9mZWVk">
+                Too naked to hide
+              </a>
+
+              <div className="mt-4 font-bold">Apple Podcasts (Italiano) </div>
+              <a className="text-fuchsia-700 font-bold" href="https://podcasts.apple.com/it/podcast/trailer/id1567747470?i=1000521828393">
+                Così nuda che non oso coprirmi
+              </a>
+
+            </div>
+
+            <div className="mt-16 mb-16 text-xl">
+              <div lassName="mr-3">Gruppo Telegram</div>
+
+              <div className="mt-4 font-bold">Gruppo Telegram (Italiano)</div>
+              <a className="text-fuchsia-700 font-bold" href=" https://t.me/ninalegge">
+                https://t.me/ninalegge
               </a>
             </div>
 
-            <div className="mt-16 text-xl">
-              <span className="mr-3">Italian podcast on Apple: </span>
-              <a className="text-fuchsia-700 font-bold" href="https://podcasts.apple.com/it/podcast/trailer/id1567747470?i=1000521828393">
-                Romanzo Così nuda che non oso coprirmi
-              </a>
-            </div>
+            <Image src="/podcast-padova-house.jpg" width="1800" height="2400"></Image>            
+
           </div>
           
 

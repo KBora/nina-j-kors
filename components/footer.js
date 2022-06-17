@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-white to-red-50">
       <Container>
-        <div className="py-8 px-5 flex flex-col lg:flex-row">
-          Contact me at: 
+        <div className="py-8 px-5 lg:flex-row">
+          Contact me at <a href="mailto:nina@toonaked.me">nina@toonaked.me</a>
         </div>
       </Container>
     </footer>
