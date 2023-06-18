@@ -49,7 +49,7 @@ export default function Index() {
               </a>
             </div>
 
-            <Image src="/podcast-padova-house.jpg" width="1800" height="2400"></Image>            
+            <Image src="/submarin.jpg" width="2000" height="1341"></Image>
 
           </div>
           
