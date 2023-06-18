@@ -15,7 +15,7 @@ export default function MenuItems() {
       <Link href="/blog" passHref>
         <div>
           <MenuItem>
-            Blog
+            Articles
           </MenuItem>
         </div>
       </Link>
